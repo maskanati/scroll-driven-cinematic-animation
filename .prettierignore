@@ -1,0 +1,8 @@
+# Build directories
+build/*
+dist/*
+public/*
+**/node_modules/*
+
+pnpm-lock.yaml
+jsconfig.json

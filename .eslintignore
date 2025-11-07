@@ -1,0 +1,18 @@
+# Build directories
+build/*
+dist/*
+public/*
+**/node_modules/*
+
+# eslintrc
+**/.eslintrc.*
+
+# prettier
+**/.prettier.*
+**/prettier.config.*
+
+# vite
+**/vite.config.*
+
+# misc
+**/jsconfig.json
