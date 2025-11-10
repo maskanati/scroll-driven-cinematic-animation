@@ -1,0 +1,43 @@
+/* CSS Reset & Base Styles - Optimized for performance */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color-scheme: dark;
+  background-color: #0d0d0d;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+html {
+  /* Enable smooth scrolling */
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Loading placeholder optimization */
+img,
+video {
+  content-visibility: auto;
+}

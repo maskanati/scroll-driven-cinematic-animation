@@ -1,0 +1,44 @@
+.scroll-video-player {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+  inset: 0;
+  /* Performance optimizations */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.overlay-container {
+  width: 100vw;
+}
+
+.overlay-svg {
+  width: 100%;
+  height: auto;
+}
+
+.mask-container {
+  mix-blend-mode: multiply;
+  color: white;
+  background: black;
+}
+
+.mask-container , .logo-container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  opacity: 0;
+  backface-visibility: hidden;
+}

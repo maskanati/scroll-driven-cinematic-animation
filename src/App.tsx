@@ -1,5 +1,12 @@
+import { CinematicScene } from './cinematic-scene'
+import { VideoLoadingProvider } from './contexts/VideoLoadingContext.tsx'
+
 function App() {
-  return <h1>Let&#39;s build an exciting cinematic experience. 🎉</h1>
+  return (
+    <VideoLoadingProvider>
+      <CinematicScene src="./shot.mp4" duration="500vh" />
+    </VideoLoadingProvider>
+  )
 }
 
 export default App
