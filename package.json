@@ -15,14 +15,17 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+    "@svgr/rollup": "^8.1.0",
     "@types/node": "^24.6.0",
     "@types/react": "^19.1.16",
-    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@types/react-dom": "^19.1.9",
     "@typescript-eslint/eslint-plugin": "^8.45.0",
     "@typescript-eslint/parser": "^8.45.0",
